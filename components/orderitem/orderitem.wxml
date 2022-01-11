@@ -1,0 +1,18 @@
+<!--components/orderitem/orderitem.wxml-->
+<!-- <text>components/orderitem/orderitem.wxml</text> -->
+<view class="order-item">
+    <view class="ordernum-container">
+        <view class="order-num-text">订单编号</view>
+        <view class="order-num-num">{{ orderItem.order_number }}</view>
+    </view>
+    <view class="order-item-price">
+        <view class="order-price-text">订单价格</view>
+        <view class="order-price-num">￥{{ orderItem.order_price }}</view>
+    </view>
+    <view class="order-item-data">
+        <view class="order-data-text">
+            订单日期
+        </view>
+        <view class = "order-data-num">{{ orderItem.update_time }}</view>
+    </view>
+</view>

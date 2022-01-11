@@ -1,0 +1,68 @@
+/* pages/cart/index.wxss */
+.cart-address{
+    display: flex;
+    height: 130rpx;
+    justify-content: center;
+    align-items: center;
+}
+.cart-address button{
+    width: 60% !important;
+}
+.show-address{
+    display: flex;
+    padding: 20rpx;
+}
+.show-address .address-left{
+    flex: 5;
+}
+.show-address .address-right{
+    flex: 3;
+    text-align: right;
+}
+/* 购物车内容 */
+.cart-content .cart-title{
+    padding: 20rpx;
+    font-size: 36rpx;
+    font-weight: 600;
+    border-top: 2rpx solid var(--ThemeColor);
+    border-bottom: 2rpx solid var(--ThemeColor);
+}
+.cart-tabs{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 90rpx;
+    display: flex;
+    border-top: 1rpx solid #dedede;
+}
+.cart-tabs .cart-all-check{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-tabs .cart-all-price{
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 20rpx;
+}
+.cart-tabs .cart-all-price .c{
+    color: var(--ThemeColor);
+}
+.cart-tabs .cart-all-price .yf{
+    font-size: 24rpx;
+    font-weight: 600;
+}
+.cart-tabs .cart-js{
+    flex: 2;
+    background-color: var(--ThemeColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30rpx;
+}

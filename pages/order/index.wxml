@@ -1,0 +1,7 @@
+<!--pages/order/index.wxml-->
+<!-- <text>pages/order/index.wxml</text> -->
+<view class="order-container">
+    <Tabs tabsData = "{{ tabsData }}" bindmyEvent = "sonTabsClick" >
+        <OrderItem wx:for = "{{ orderData }}" wx:key = "order_id" orderItem = "{{ item }}"></OrderItem>
+    </Tabs>
+</view>

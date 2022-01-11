@@ -1,0 +1,51 @@
+/* pages/pay/index.wxss */
+.pay-address{
+    display: flex;
+    padding: 20rpx;
+}
+.pay-address .pay-address-info{
+    flex: 5;
+}
+.pay-address .pay-phone{
+    flex: 3;
+    text-align: right;
+}
+.pay-title{
+    padding: 20rpx;
+    font-size: 36rpx;
+    font-weight: 600;
+    border-top: 2rpx solid var(--ThemeColor);
+    border-bottom: 2rpx solid var(--ThemeColor);
+}
+.pay-tabs{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 90rpx;
+    display: flex;
+}
+.pay-tabs .pay-hj-container{
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 15rpx;
+}
+.pay-tabs .pay-hj-container .pay-hj .hj{
+    color: var(--ThemeColor);
+    font-weight: 600;
+}
+.pay-tabs .pay-hj-container .bh{
+    font-size: 24rpx;
+    font-weight: 600;
+}
+.pay-tabs .pay-pay{
+    flex: 2;
+    background-color: var(--ThemeColor);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

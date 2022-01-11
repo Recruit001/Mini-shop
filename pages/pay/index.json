@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "PayGoods": "../../components/paygoods/paygoods"
+  },
+  "navigationBarTitleText": "支付"
+}

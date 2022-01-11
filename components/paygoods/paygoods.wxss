@@ -1,0 +1,34 @@
+/* components/paygoods/paygoods.wxss */
+.pay-goods-item{
+    display: flex;
+    border-bottom: 1rpx solid #eee;
+    padding: 5rpx;
+}
+.pay-goods-item .pay-image{
+    flex: 2;
+}
+.pay-goods-item .pay-image image{
+    width: 80%;
+}
+.pay-goods-item .pay-goods-info{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.pay-goods-item .pay-goods-info .pay-goods-content{
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.pay-goods-item .pay-goods-info .pay-goods-priceNum{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pay-goods-item .pay-goods-info .pay-goods-priceNum .pay-goods-price{
+    color: var(--ThemeColor);
+}

@@ -1,0 +1,135 @@
+/* pages/user/index.wxss */
+page{
+    background-color: #eee;
+}
+.user-login{
+    color: greenyellow;
+    border: 2rpx solid greenyellow;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    padding: 15rpx 40rpx;
+    transform: translateX(-50%);
+}
+.user-title-container{
+    height: 45vh;
+    background-color: var(--ThemeColor);
+    overflow: hidden;
+}
+.user-title-container .title-img-wrap{
+    position: relative;
+    height: 100%;
+}
+.user-title-container .title-img-wrap .title-bimg{
+    height: 100%;
+}
+.user-title-container .title-img-wrap .title-bimg image{
+    width: 100%;
+    filter: blur(10rpx);
+}
+.user-title-container .title-simg-wrap{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 18%;
+}
+.user-title-container .title-simg-wrap .title-simg{
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user-title-container .title-simg-wrap .title-simg image{
+    width: 100%;
+    height: 100%;
+}
+.user-title-container .title-simg-wrap .user-name{
+    color: #fff;
+    margin-top:40%;
+}
+.user-container .main{
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40vh;
+}
+.main{
+    color: #666;
+}
+.main-sc{
+    display: flex;
+    background-color: #fff;
+    padding: 10rpx;
+}
+.main-sc navigator{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    font-size: 28rpx;
+}
+.main-sc navigator .sc-num{
+    color: var(--ThemeColor);
+}
+/* 订单 */
+.dd{
+    margin-top: 20rpx;
+    background-color: #fff;
+}
+.dd .dd-title{
+    padding: 20rpx;
+    border-bottom: 4rpx solid #eee;
+}
+.dd .dd-item{
+    display: flex;
+    padding: 20rpx;
+}
+.dd .dd-item .dd-icon{
+    color: var(--ThemeColor);
+    font-size: 45rpx;
+    margin-bottom: 10rpx;
+}
+.dd .dd-item navigator{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 26rpx;
+}
+.sh{
+    margin: 20rpx 0;
+    background-color: #fff;
+    padding: 30rpx;
+}
+.user-app{
+    padding: 0 10rpx;
+    background-color: #fff;
+}
+.user-app .kf{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20rpx 10rpx;
+    border-bottom: 4rpx solid #eee;
+}
+.user-app .fk{
+    padding: 20rpx 10rpx;
+    border-bottom: 4rpx solid #eee;
+}
+.user-app .gy{
+    padding: 20rpx 10rpx;
+}
+.fx{
+    margin-top: 30rpx;
+    background-color: #fff;
+    padding: 20rpx;
+    margin-bottom: 100rpx;
+}

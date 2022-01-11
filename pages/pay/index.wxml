@@ -1,0 +1,28 @@
+<!--pages/pay/index.wxml-->
+<!-- <text>pages/pay/index.wxml</text> -->
+<view class="pay-container">
+    <view class="pay-address">
+        <view class="pay-address-info">
+            <view class = "pay-username">收货人{{ addressData.userName }}</view>
+            <view class = "pay-address-info">{{ addressData.all }}</view>
+        </view>
+        <view class = "pay-phone">{{ addressData.telNumber }}</view>
+    </view>
+    <view class="pay-content">
+        <view class="pay-title">
+            购物车
+        </view>
+        <view class="pay-main">
+            <PayGoods wx:for = "{{ checkedGoodsData }}" wx:key = "goods_id" checkedGoods = "{{ item }}"></PayGoods>
+        </view>
+    </view>
+    <view class="pay-tabs">
+        <view class="pay-hj-container">
+            <view class = "pay-hj">总计：<text class = "hj">￥{{ totalPrice }}</text></view>
+            <view class = "bh">包含运费</view>
+        </view>
+        <view class = "pay-pay" bindtap="hiddlepay">
+            支付({{ totalNum }})
+        </view>
+    </view>
+</view>

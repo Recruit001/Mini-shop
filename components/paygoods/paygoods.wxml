@@ -1,0 +1,14 @@
+<!--components/paygoods/paygoods.wxml-->
+<!-- <text>components/paygoods/paygoods.wxml</text> -->
+<view class="pay-goods-item">
+    <view class="pay-image">
+        <image mode = "widthFix" src = "{{ checkedGoods.goods_big_logo }}"></image>
+    </view>
+    <view class = "pay-goods-info">
+        <view class="pay-goods-content">{{ checkedGoods.goods_name }}</view>
+        <view class = "pay-goods-priceNum">
+            <view class="pay-goods-price">￥{{ checkedGoods.goods_price }}</view>
+            <view class = "pay-goods-num">x {{ checkedGoods.num }}</view>
+        </view>
+    </view>
+</view>

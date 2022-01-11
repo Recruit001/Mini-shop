@@ -1,0 +1,32 @@
+<!--pages/category/index.wxml-->
+<!-- <text>pages/category/index.wxml</text> -->
+<view class="category">
+<!-- 搜索框开始 -->
+    <Search></Search>
+<!-- 搜索款结束 -->
+<!-- 分类内容 -->
+    <view class="category-content">
+        <!-- 左边菜单 -->
+        <scroll-view class="left-menu" scroll-y = "true">
+            <view wx:for = "{{ leftMenuList }}" wx:key = "*this" class = "{{ index == currentIndex ? 'active' : '' }}" bindtap = "leftMenuClick" data-index = "{{ index }}">{{ item }}</view>
+        </scroll-view>
+        <!-- 左边菜单结束 -->
+        <!-- 右边菜单 -->
+        <scroll-view class="right-menu" scroll-y = "true" scroll-top = "{{ scrollTopNum }}">
+            <view class="right-item-container" wx:for = "{{ rightMenuList }}" wx:for-item = "item1" wx:for-index = "index1" wx:key = "cat_id">
+                <view class="right-title">
+                    <text>/</text>
+                    <text>{{ item1.cat_name }}</text>
+                    <text>/</text>
+                </view>
+                <view class = "right-container">
+                    <navigator class="right-content" wx:for = "{{ item1.children }}" wx:for-item = "item2" wx:for-index = "index2" wx:key = "cat_id" url = "../goods_list/index?cid={{ item2.cat_id }}">
+                        <image src = "{{ item2.cat_icon }}" mode = "widthFix"></image>
+                        <text>{{ item2.cat_name }}</text>
+                    </navigator>
+                </view>
+            </view>
+        </scroll-view>
+        <!-- 右边菜单结束 -->
+    </view>
+</view>

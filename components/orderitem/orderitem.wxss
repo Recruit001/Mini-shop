@@ -1,0 +1,16 @@
+/* components/orderitem/orderitem.wxss */
+.order-item{
+    border-bottom: 4rpx solid #eee;
+    padding-bottom: 20rpx;
+    color: #666;
+}
+.order-item .ordernum-container,.order-item .order-item-price,.order-item .order-item-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20rpx 20rpx 0rpx;
+}
+.order-item .order-item-price .order-price-num{
+    color: var(--ThemeColor);
+    font-size: 36rpx;
+}

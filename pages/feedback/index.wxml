@@ -1,0 +1,36 @@
+<!--pages/feedback/index.wxml-->
+<!-- <text>pages/feedback/index.wxml</text> -->
+<view class="feedback-container">
+    <Tabs tabsData = "{{ tabsData }}" bindmyEvent = "sonTabsClick" >
+        <block wx:if = "{{ currentIndex == 0 }}">
+            <view class = "ty-container">
+                <view class="ty-title">
+                    问题的种类
+                </view>
+                <view class="ty-tips">
+                    <text>功能建议</text>
+                    <text>购买遇到问题</text>
+                    <text>性能问题</text>
+                    <text>其他</text>
+                </view>
+                <view class = "ty-content">
+                    <textarea placeholder="请描述下你的问题" value = "{{ textareaValue }}" bindinput="hiddleinput"></textarea>
+                    <view class = "feedback-img">
+                        <view class="add-img" bindtap="hiddleupimg">+</view>
+                        <view class="add-img-item" wx:for = "{{ goodsImg }}" wx:key = "*this">
+                            <icon type = "clear" color = "#fa5151" class = "feedback-icon" bindtap="hiddlecancel" data-index = "{{ index }}"></icon>
+                            <image mode="scaleToFill" src = "{{ item }}"></image>
+                        </view>
+                    </view>
+                </view>
+                <view class = "feed-btn" bindtap="hiddlebtn">
+                    <button type = "warn">
+                        <icon type = "success_no_circle" color = "#fff"></icon>
+                        提交
+                    </button>
+                </view>
+            </view>
+        </block>
+        <block wx:else ></block>
+    </Tabs>
+</view>

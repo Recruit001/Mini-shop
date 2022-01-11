@@ -1,0 +1,16 @@
+/*
+  初始化状态 
+ */
+ @import "style/iconfoot.wxss";
+ page,view,text,navigator,swiper,swiper-item{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ /*
+   主题定制 
+  */
+  page{
+    --ThemeColor: #f8534f;
+    font-size: 28rpx;
+  }

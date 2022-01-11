@@ -1,0 +1,27 @@
+<!--components/goodslist/goodslist.wxml-->
+<!-- <text>components/goodslist/goodslist.wxml</text> -->
+<view class = "goods_item">
+    <view class="goods_checked_box">
+        <checkbox-group bindchange = "sendhiddlechange" data-id = "{{ goodsItemData.goods_id }}">
+            <checkbox color = "#f8534f" checked = "{{ goodsItemData.isChecked }}"></checkbox>
+        </checkbox-group>
+    </view>
+    <view class="goods_image">
+        <image mode = "widthFix" src = "{{ goodsItemData.goods_big_logo }}"></image>
+    </view>
+    <view class="goods_info">
+        <view class="goods_info_top">
+           {{ goodsItemData.goods_name }}
+        </view>
+        <view class="goods_info_bottom">
+            <view class="goods_price">
+                ￥{{ goodsItemData.goods_price }}
+            </view>
+            <view class="goods_nums">
+                <text class = "cz" bindtap="sendczhiddle" data-id = "{{ goodsItemData.goods_id }}" data-cz = "{{ -1 }}">-</text>
+                <text>{{ goodsItemData.num }}</text>
+                <text class = "cz" bindtap="sendczhiddle" data-id = "{{ goodsItemData.goods_id }}" data-cz = "{{ 1 }}">+</text>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,33 @@
+<!--pages/collect/index.wxml-->
+<!-- <text>pages/collect/index.wxml</text> -->
+<view class="collect-container">
+    <Tabs tabsData = "{{ tabsData }}" bindmyEvent = "sonTabsClick" >
+        <block wx:if = "{{ currentIndex == 0 }}">
+            <view class="xltabs">
+                <view class="xl-item active">
+                    全部
+                </view>
+                <view class="xl-item">
+                    正在热卖
+                </view>
+                <view class="xl-item">
+                    即将上线
+                </view>
+            </view>
+            <view class = "goods_zh">
+                <navigator class = "goods-list-item" wx:for = "{{ collectData }}" wx:key = "goods_id" url = "../goods_detail/index?goods_id={{ item.goods_id }}">
+                    <view class = "goods-img">
+                        <image src = "{{ item.goods_small_logo ? item.goods_small_logo : 'https://img-qn-4.51miz.com/2017/06/06/05/2017060605659716_P355746_0ade2f85.jpg!/quality/90/unsharp/true/compress/true/format/webp/fh/260' }}" mode = "widthFix"></image>
+                    </view>
+                    <view class="goods-content">
+                        <view class="goods-title">{{ item.goods_name }}</view>
+                        <view class = "goods-price">￥{{ item.goods_price }}</view>
+                    </view>
+                </navigator>
+            </view>
+        </block>
+        <block wx:elif = "{{ currentIndex == 1 }}"></block>
+        <block wx:elif = "{{ currentIndex == 2 }}"></block>
+        <block wx:else></block>
+    </Tabs>
+</view>

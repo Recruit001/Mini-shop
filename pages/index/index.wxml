@@ -1,0 +1,29 @@
+<!-- 搜索框 -->
+<Search></Search>
+<!-- 轮播图 -->
+<swiper class = "swiper-index" autoplay="true" circular = "true" indicator-dots="true">
+    <swiper-item wx:for = "{{ swiperList }}" wx:key = "goods_id" wx:for-item = "item" wx:for-index = "index">
+        <navigator url = "{{ item.navigator_url }}">
+            <image src = "{{ item.image_src }}" mode = "widthFix"></image>
+        </navigator>
+    </swiper-item>
+</swiper>
+<!-- 导航 -->
+<view class = "navigator-index">
+    <navigator wx:for = "{{ navigatorList }}" wx:key = "name" url = "/pages/category/index" open-type="switchTab">
+        <image src = "{{ item.image_src}}" mode = "widthFix"></image>
+    </navigator>
+</view>
+<!-- 楼层 -->
+<view class="floorContainer-index">
+    <view class="floor-index-container" wx:for = "{{ floorData }}" wx:for-item = "item1" wx:for-index = "index1" wx:key = "floor_title">
+        <view class="floor-title">
+            <image src = "{{ item1.floor_title.image_src }}" mode = "widthFix"></image>
+        </view>
+        <view class="floor-product">
+            <navigator wx:for = "{{ item1.product_list }}" wx:key = "*this" wx:for-item = "item2" wx:for-index = "index2" url = "{{ item2.navigator_url }}">
+                <image src = "{{ item2.image_src }}" ></image>
+            </navigator>
+        </view>
+    </view>
+</view>

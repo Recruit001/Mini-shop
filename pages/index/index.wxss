@@ -1,0 +1,44 @@
+.swiper-index{
+    width:100%;
+    height:340rpx;
+}
+.swiper-index image{
+    width: 100%;
+    height:340rpx;
+}
+.navigator-index{
+    display: flex;
+}
+.navigator-index navigator{
+    flex: 1;
+    padding: 30rpx;
+}
+.navigator-index navigator image{
+    width: 100%;
+}
+/* 楼层样式 */
+.floorContainer-index .floor-index-container{
+    margin: 20rpx 0 0 0;
+}
+.floorContainer-index .floor-index-container .floor-title image{
+    width: 100%;
+}
+.floorContainer-index .floor-product{
+    overflow: hidden;
+}
+.floorContainer-index .floor-product navigator{
+    float: left;
+    width: 250rpx;
+    height: 415.94rpx;
+}
+.floorContainer-index .floor-product navigator:nth-child(n + 2){
+    height: 207.97rpx;
+    border-left: 5rpx solid white;
+}
+.floorContainer-index .floor-product navigator:nth-child(-n + 3){
+    border-bottom: 5rpx solid white;
+}
+.floorContainer-index .floor-product navigator image{
+    width: 100%;
+    height: 100%;
+}

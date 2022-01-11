@@ -1,0 +1,80 @@
+/* pages/feedback/index.wxss */
+page{
+    background-color: #dedede;
+}
+.ty-container{
+    padding: 0 10rpx;
+    color: #666;
+}
+.ty-container .ty-title{
+    font-size: 30rpx;
+    margin: 10rpx 0;
+}
+.ty-container .ty-tips{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ty-container .ty-tips text{
+    width: 30%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rpx 0;
+    margin: 10rpx 1.5%;
+}
+.ty-content{
+    margin-top:30rpx;
+    background-color: #fff;
+    padding: 10rpx;
+}
+.feedback-img{
+    display: flex;
+    flex-wrap: wrap;
+}
+.feedback-img .add-img{
+    width: 90rpx;
+    height: 90rpx;
+    background-color: #f6f6f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50rpx;
+    color:#dbdbdb;
+    margin-left: 15rpx;
+    border-radius: 5rpx;
+}
+.feedback-img .add-img-item{
+    position: relative;
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 5rpx;
+    margin-left: 10rpx;
+    margin-bottom: 10rpx;
+}
+.feedback-img .add-img-item .feedback-icon{
+    position: absolute;
+    top: -20rpx;
+    right: -20rpx;
+    z-index: 999;
+}
+.feedback-img .add-img-item image{
+    width: 100%;
+    height: 100%;
+}
+.feed-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10rpx;
+}
+.feed-btn button{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 200rpx !important;
+    height: 80rpx !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff !important;
+    background-color: #fa5151 !important;
+}
